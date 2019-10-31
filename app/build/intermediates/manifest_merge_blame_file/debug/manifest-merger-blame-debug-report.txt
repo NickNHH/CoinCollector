@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ch.hsr.appquest.coincollector"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:6:5-72
+8        android:minSdkVersion="23"
+8-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:6:5-72
+9        android:targetSdkVersion="29" />
+9-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:6:5-72
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:8:5-81
+11-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:8:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:9:5-79
+12-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:9:22-76
+13    <uses-permission
+13-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:11:5-13:36
+14        android:name="android.permission.BLUETOOTH"
+14-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:12:9-52
+15        android:required="false" />
+15-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:13:9-33
+16    <uses-permission
+16-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:14:5-16:36
+17        android:name="android.permission.BLUETOOTH_ADMIN"
+17-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:15:9-58
+18        android:required="false" />
+18-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:16:9-33
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+19-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:17:5-81
+19-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:17:22-78
+20    <application
+20-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:12:5-29:19
+21        android:allowBackup="true"
+21-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:13:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:fullBackupContent="false"
+24-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:19:9-42
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:14:9-43
+26        android:label="@string/app_name"
+26-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:16:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:15:9-54
+28        android:supportsRtl="true"
+28-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:17:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:18:9-40
+31        <activity
+31-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:21:9-28:20
+32            android:name="ch.hsr.appquest.coincollector.MainActivity"
+32-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:22:13-41
+33            android:label="@string/app_name" >
+33-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:23:13-45
+34            <intent-filter>
+34-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:24:13-27:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:25:17-69
+35-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:25:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:26:17-77
+37-->C:\Users\tuni\StudioProjects\CoinCollector\app\src\main\AndroidManifest.xml:26:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >
+41-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:21:9-27:20
+41-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:21:19-87
+42            <intent-filter>
+42-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:22:13-26:29
+43                <action android:name="android.intent.action.BOOT_COMPLETED" />
+43-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:23:17-79
+43-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:23:25-76
+44                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+44-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:24:17-87
+44-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:24:25-84
+45                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+45-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:25:17-90
+45-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:25:25-87
+46            </intent-filter>
+47        </receiver>
+48
+49        <service
+49-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:29:9-34:38
+50            android:name="org.altbeacon.beacon.service.BeaconService"
+50-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:30:13-70
+51            android:enabled="true"
+51-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:31:13-35
+52            android:exported="false"
+52-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:32:13-37
+53            android:isolatedProcess="false"
+53-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:33:13-44
+54            android:label="beacon" />
+54-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:34:13-35
+55        <service
+55-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:35:9-38:40
+56            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+56-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:36:13-70
+57            android:enabled="true"
+57-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:37:13-35
+58            android:exported="false" />
+58-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:38:13-37
+59        <service
+59-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:39:9-48:19
+60            android:name="org.altbeacon.beacon.service.ScanJob"
+60-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:40:13-64
+61            android:permission="android.permission.BIND_JOB_SERVICE" >
+61-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:41:13-69
+62            <meta-data
+62-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:42:13-44:45
+63                android:name="immediateScanJobId"
+63-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:43:17-50
+64                android:value="208352939" />
+64-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:44:17-42
+65            <meta-data
+65-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:45:13-47:45
+66                android:name="periodicScanJobId"
+66-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:46:17-49
+67                android:value="208352940" />
+67-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:47:17-42
+68        </service>
+69        <service
+69-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:49:9-55:19
+70            android:name="org.altbeacon.bluetooth.BluetoothTestJob"
+70-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:50:13-68
+71            android:permission="android.permission.BIND_JOB_SERVICE" >
+71-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:51:13-69
+72            <meta-data
+72-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:52:13-54:46
+73                android:name="jobId"
+73-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:53:17-37
+74                android:value="1799803768" />
+74-->[org.altbeacon:android-beacon-library:2.16.3] C:\Users\tuni\.gradle\caches\transforms-2\files-2.1\80f826a554f28314de7088daf037b5b3\android-beacon-library-2.16.3\AndroidManifest.xml:54:17-43
+75        </service>
+76    </application>
+77
+78</manifest>
