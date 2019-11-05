@@ -36,8 +36,7 @@ public class CoinRegion {
     }
 
     public String getRegionName() {
-        // TODO: Gib anhand des Identifiers den richtigen Regions-Namen zurück. Dieser wird dann im passenden Section-Header der SectionedRecyclerView angezeigt.
-        return "TODO: Regions-Name einfügen";
+        return getImageName();
     }
 
 }
