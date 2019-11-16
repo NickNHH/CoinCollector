@@ -24,6 +24,8 @@ import org.altbeacon.beacon.Region;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.List;
+
 import io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter;
 
 public class MainActivity extends AppCompatActivity implements BeaconConsumer {
@@ -52,7 +54,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     }
 
     private void setupBeaconManager() {
-        // TODO: Erstelle und konfiguriere den BeaconManager.
+        beaconManager = BeaconManager.getInstanceForApplication(this);
+        beaconManager.bind(this);
 
         if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             if (this.checkSelfPermission(Manifest.permission.ACCESS_BACKGROUND_LOCATION) == PackageManager.PERMISSION_GRANTED) {
@@ -150,7 +153,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
         if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             if (this.checkSelfPermission(Manifest.permission.ACCESS_BACKGROUND_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                // TODO: Falls die Permissions erst hier vorhanden sind, musst du den BeaconManager hier konfigurieren.
+                beaconManager = BeaconManager.getInstanceForApplication(this);
+                beaconManager.bind(this);
             }
         }
     }
@@ -158,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // TODO: Der BeaconManager wird hier nicht mehr gebraucht.
+        beaconManager.unbind(this);
     }
 
     @Override
@@ -185,8 +189,18 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     public void onBeaconServiceConnect() {
         beaconManager.addRangeNotifier((beacons, region) -> {
             // TODO: Für jeden Beacon in der beacons Collection, rufe die Methode collectBeacon() auf.
+            if (beacons.size() > 0) {
+                for(Beacon beacon : beacons){
+                    collectBeacon(beacon);
+                }
+            }
         });
         // TODO: Starte hier das Suchen nach Beacons.
+        try {
+            beaconManager.startRangingBeaconsInRegion(new Region(appUuid, null, null, null));
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
     }
 
     private void onLogAction() {
@@ -208,6 +222,18 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     private void updateCoin(int major, int minor) {
         // TODO: Setze die Minor Nummer der gefundenen Münze und speichere das Ergebnis. Danach muss man auch noch die SectionedRecyclerView neu laden.
         // TODO (optional): Zeige dem User eine lokale Notification. Dazu kannst Du die Klasse NotificationUtil verwenden.
+        List<Coin> coins = coinManager.getCoins();
+
+        for (Coin coin: coins){
+            if(coin.getMajor() == major){
+                Log.i(TAG, "Minor = " + minor);
+                coin.setMinor(minor);
+                coinManager.save();
+            }
+        }
+        sectionAdapter.notify();
+        NotificationUtil notificationUtil = new NotificationUtil(this);
+        notificationUtil.sendNotificationToUser();
     }
 
 }

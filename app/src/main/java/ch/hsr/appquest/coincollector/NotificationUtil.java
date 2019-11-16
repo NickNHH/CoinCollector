@@ -8,6 +8,8 @@ import android.media.AudioAttributes;
 import android.net.Uri;
 import android.os.Build;
 
+import androidx.core.app.NotificationCompat;
+
 public class NotificationUtil {
 
     private static final String CHANNEL_ID = "CoinChannelId";
@@ -19,8 +21,14 @@ public class NotificationUtil {
 
     NotificationUtil(Context context) { this.context = context; }
 
-    public void sendNotificationToUser(String title, String message) {
+    public void sendNotificationToUser() {
         // TODO: Setze hier eine Notification ab. Nutze dazu NotificationCompat.Builder.
+        /*NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setContentTitle("Coin Collector")
+                .setContentText("Coin found")
+                .setStyle(new NotificationCompat.BigTextStyle()
+                        .bigText("Coin found"))
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);*/
     }
 
     public void createNotificationChannel() {
